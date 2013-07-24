@@ -40,8 +40,8 @@ public class TodoService {
 		CriteriaBuilder cb = entityManager.getCriteriaBuilder();
         CriteriaQuery<Todo> criteria = cb.createQuery(Todo.class);
         Root<Todo> todoList = criteria.from(Todo.class);
-        criteria.select(todoList).orderBy(cb.asc(todoList.get("createdOn")));
-        return entityManager.createQuery(criteria).getResultList();
+        criteria.select(todoList).orderBy(cb.desc(todoList.get("createdOn")));
+        return entityManager.createQuery(criteria).setMaxResults(20).getResultList();
 	}
 
 }
