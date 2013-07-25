@@ -1,1 +1,10 @@
 script: true
+deploy:
+  provider: openshift
+  user: shekhar.xebia@gmail.com
+  password:
+    secure: SrhBgUEmQnlZ+olhlDdd/eIHnk2UyAlhWho5Gi/9/QYhPDsL7sBUrcrvfI9nK9GQlwoYZVQxJzJ8U4WXSH9WRmnatid4sQhhs7UOUtYqKJjXgxu55kSv9d9HmRg1e7CjZGxdtidW8lLT39p5X/bio5lLmcnf7e68dbRK+1ju5yU=
+  app: todoapp
+  domain: newideas
+  on:
+    repo: shekhargulati/todoapp
