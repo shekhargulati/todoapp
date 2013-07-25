@@ -1,3 +1,1 @@
-The OpenShift `jbosseap` cartridge documentation can be found at:
-
-https://github.com/openshift/origin-server/tree/master/cartridges/openshift-origin-cartridge-jbosseap/README.md
+[![Build Status](https://travis-ci.org/shekhargulati/todoapp.png)](https://travis-ci.org/shekhargulati/todoapp)
